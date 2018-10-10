@@ -21,10 +21,6 @@ if (hash) {
   }
 }
 
-import myPlaylist from "./../mp3/playlist.json";
-console.log('myPlaylist', myPlaylist);
-config.initialTracks = myPlaylist;
-
 // Backwards compatibility with the old syntax
 if (config.audioUrl && !config.initialTracks) {
   config.initialTracks = [{ url: config.audioUrl }];
